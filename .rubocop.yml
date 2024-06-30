@@ -11,6 +11,7 @@ require:
   - rubocop-rspec
   - rubocop-factory_bot
   - rubocop-rspec_rails
+  - rubocop-capybara
 
 AllCops:
   TargetRubyVersion: 3.3.0
@@ -25,3 +26,6 @@ AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
   NewCops: enable
+
+Style/Documentation:
+  Enabled: false
