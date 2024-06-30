@@ -1,0 +1,27 @@
+# You can find more information about RuboCop pending cops policy
+# https://docs.rubocop.org/rubocop/versioning.html#pending-cops
+#
+# These are the default options. The .rubocop.yml inherit and
+# override all the default options.
+# https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
+
+require:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-factory_bot
+  - rubocop-rspec_rails
+
+AllCops:
+  TargetRubyVersion: 3.3.0
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
+    - 'public/**/*'
+    - 'vendor/**/*'
+    - 'db/**/*'
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  NewCops: enable
