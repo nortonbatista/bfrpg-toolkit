@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resource :registrations, only: [:new, :create]
+  resource :sessions, only: [:new, :create, :destroy]
 end
