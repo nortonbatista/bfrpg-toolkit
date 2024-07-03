@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'home#index'
+
+  resource :registrations, only: [:new, :create]
 end
