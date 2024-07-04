@@ -10,4 +10,5 @@ Rails.application.routes.draw do
 
   resource :registrations, only: [:new, :create]
   resource :sessions, only: [:new, :create, :destroy]
+  resource :passwords, only: [:edit, :update]
 end
