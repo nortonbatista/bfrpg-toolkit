@@ -4,6 +4,7 @@
   <% if user_signed_in? %>
     <%= button_to "Logout", sessions_path, method: :delete, class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
   <% else %>
+    <%= link_to "Login", new_sessions_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
     <%= link_to "Sign Up", new_registrations_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
   <% end %>
 </div>
