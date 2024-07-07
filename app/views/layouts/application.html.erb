@@ -12,7 +12,19 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="container mx-auto mt-28 px-5 flex flex-col">
+      <% if alert.present? %>
+        <div class="bg-red-300 text-red-500 px-3 py-2">
+          <%= alert %>
+        </div>
+      <% end %>
+
+      <% if notice.present? %>
+        <div class="bg-blue-300 text-blue-500 px-3 py-2">
+          <%= notice %>
+        </div>
+      <% end %>
+
       <%= yield %>
     </main>
   </body>
