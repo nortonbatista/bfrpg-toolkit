@@ -1,24 +1,13 @@
-# README
+# Dependencies
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby
+- SQLite3
 
-Things you may want to cover:
+# How to run the project
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Run bin/bundle to install de dependencies
+- Run bin/rails db:setup to create the database
+- Copy the .example.env file and create a .env file
+- Run bin/rails db:encryption:init and copy the result
+- Paste the result in the .env file
+- Run bin/bundle to start the project
