@@ -8,16 +8,16 @@ class SessionsController < ApplicationController
 
     if user
       login user
-      redirect_to root_path, notice: 'Logged in successfully'
+      redirect_to root_path, notice: t('.success')
     else
-      flash[:alert] = 'Invalid email or password'
+      flash[:alert] = t('.invalid_credentials')
       render :new, status: :unprocessable_entity
     end
   end
 
   def destroy
     logout
-    redirect_to root_path, notice: 'Logged out successfully'
+    redirect_to root_path, notice: t('.success')
   end
 
   private

@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   private
 
   def authenticate_user!
-    redirect_to root_path, alert: 'You must be signed in to view this page' unless user_signed_in?
+    redirect_to root_path, alert: I18n.t('application.user_must_be_signed_in') unless user_signed_in?
   end
 
   def current_user = Current.user ||= authenticate_user_from_session
